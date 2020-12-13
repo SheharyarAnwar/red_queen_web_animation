@@ -29,6 +29,6 @@ jobs:
       - name: Install Surge
         run: npm i -g surge
       - name: Create Build
-        run: CI=true npm run build
+        run: CI=false npm run build
       - name: Deploy on Surge
         run: surge ./build --token ${{secrets.SURGE_TOKEN}} --domain red-queen-sheharyar.surge.sh
