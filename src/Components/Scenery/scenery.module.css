@@ -1,0 +1,106 @@
+.scenery {
+  top: 0;
+  margin-top: 35vh;
+  width: 300%;
+  height: 50%;
+  position: relative;
+  /* animation: mymove 8s linear infinite; */
+}
+.bg {
+  height: 100vh;
+  width: 100%;
+}
+.aliceWrapper {
+  position: absolute;
+  z-index: 2;
+  overflow: hidden;
+  width: 80%;
+  max-width: 450px;
+  max-height: 385px;
+  right: calc(50vw - (454px / 2));
+}
+
+@keyframes alice {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+@keyframes mymove {
+  from {
+    transform: translateX(20%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.ground {
+  position: absolute;
+  bottom: 0;
+  height: 50%;
+  width: 100%;
+}
+.bush {
+  position: absolute;
+  z-index: 3;
+  bottom: 30%;
+  right: 49%;
+}
+.knight {
+  z-index: 1;
+  position: absolute;
+  bottom: 35%;
+  right: 85%;
+}
+.mpalm {
+  z-index: 4;
+  position: absolute;
+  bottom: -20%;
+  height: 200%;
+  right: 60%;
+}
+.smpalm {
+  z-index: 1;
+  position: absolute;
+  bottom: 40%;
+  right: 30%;
+}
+.palm {
+  z-index: 1;
+  position: absolute;
+  height: 80%;
+  bottom: 20%;
+  right: 77%;
+  z-index: 1;
+}
+.pawn {
+  z-index: 1;
+  position: absolute;
+  z-index: 1;
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+}
+.rook {
+  z-index: 1;
+  position: absolute;
+  bottom: 20%;
+  right: 70%;
+  width: 8%;
+}
+.dpawn {
+  z-index: 1;
+  position: absolute;
+  bottom: 40%;
+  right: 40%;
+  width: 10%;
+}
+.sky {
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  top: 0;
+  background: #246e89 url("../../Assets/sky.jpg") repeat-x 100% 100% / auto 100%;
+}
